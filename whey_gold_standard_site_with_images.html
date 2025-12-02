@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whey Gold Standard — протеин</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 20px auto;
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    .product-images, .flavors, .reviews {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .product-images img, .flavor-card img, .shake img {
+      width: 250px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .product-images img:hover, .flavor-card img:hover {
+      transform: scale(1.05);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      padding: 5px 0;
+    }
+
+    .section-title {
+      color: #ff6600;
+      margin-top: 20px;
+    }
+
+    .buy-button {
+      display: block;
+      width: 200px;
+      margin: 10px auto;
+      padding: 12px;
+      background-color: #ff6600;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 10px;
+      transition: background 0.3s;
+    }
+
+    .buy-button:hover {
+      background-color: #e65c00;
+    }
+
+    .flavor-card {
+      background-color: #fff3e6;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+      width: 200px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .shake {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .reviews {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .review-card {
+      background-color: #f0f0f0;
+      padding: 10px 15px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 30px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Whey Gold Standard — сывороточный протеин</h1>
+</header>
+
+<div class="container">
+  <h2>Optimum Nutrition Whey Gold Standard</h2>
+
+  <div class="product-images">
+    <img src="images/whey1.jpg" alt="Whey Gold Standard фронт">
+    <img src="images/whey2.jpg" alt="Whey Gold Standard 5lb">
+    <img src="images/shaker.jpg" alt="Шейкер с протеином">
+  </div>
+
+  <h3 class="section-title">Состав и пищевая ценность</h3>
+  <ul>
+    <li><strong>Белок:</strong> 24 г на порцию (~30 г)</li>
+    <li><strong>Калории:</strong> 120 ккал</li>
+    <li><strong>Углеводы:</strong> ~3 г</li>
+    <li><strong>Жиры:</strong> ~1 г</li>
+    <li><strong>Аминокислоты:</strong> BCAA + глютамин</li>
+  </ul>
+
+  <h3 class="section-title">Преимущества</h3>
+  <p>Быстрое усвоение, минимум жиров и углеводов, удобен в приготовлении. Подходит для восстановления после тренировок и роста мышц.</p>
+
+  <h3 class="section-title">Вкусы / Фасовки</h3>
+  <div class="flavors">
+    <div class="flavor-card">
+      <img src="images/whey1.jpg" alt="Фасовка 900г">
+      <p>900 г — Rocky Road</p>
+      <a href="#" class="buy-button">Купить</a>
+    </div>
+    <div class="flavor-card">
+      <img src="images/whey2.jpg" alt="Фасовка 5lb">
+      <p>5 lb / 2.27 кг — Chocolate</p>
+      <a href="#" class="buy-button">Купить</a>
+    </div>
+  </div>
+
+  <h3 class="section-title">Как приготовить коктейль</h3>
+  <div class="shake">
+    <img src="images/shaker.jpg" alt="Шейкер с протеином" width="300">
+    <p>Смешайте 1–2 мерные ложки протеина с 200–250 мл воды или молока, встряхните шейкером и наслаждайтесь!</p>
+  </div>
+
+  <h3 class="section-title">Отзывы</h3>
+  <div class="reviews">
+    <div class="review-card">
+      <strong>Алексей:</strong> "Отличный протеин, хорошо усваивается, вкус ванили супер!"
+    </div>
+    <div class="review-card">
+      <strong>Марина:</strong> "После тренировки восстанавливаюсь быстрее, рекомендую всем."
+    </div>
+    <div class="review-card">
+      <strong>Игорь:</strong> "Шоколадный вкус настоящий, растворяется идеально."
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>Доставка по Алматы и Казахстану</p>
+  <p>Оплата: карта / наличные</p>
+</footer>
+
+</body>
+</html>
